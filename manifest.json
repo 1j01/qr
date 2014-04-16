@@ -2,10 +2,14 @@
 	"name": "QR",
 	"description": "QR",
 	"version": "0.0.1",
-	"permissions": ["contextMenus"],
+	"permissions": [
+		"contextMenus",
+		"storage"
+	],
 	"background": {
 		"persistent": false,
 		"scripts": ["e.js"]
 	},
+	"options_page": "options.html",
 	"manifest_version": 2
 }

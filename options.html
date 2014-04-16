@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>QR Options</title>
+		<style>
+			body {
+				font-family: Helvetica;
+			}
+			label {
+				display: block;
+				padding: 20px;
+			}
+			label:hover span {
+				text-decoration: underline;
+			}
+			* {
+				-webkit-user-select: none;
+			}
+		</style>
+	</head>
+	<body>
+		<label>
+			<input type="checkbox" id="pagecontext">
+			<span>Show a context menu item for creating a QR code for the current page.</span>
+		</label>
+		
+		<label>
+			<input type="checkbox" id="blackmagic">
+			<span>Use black magic to close the popup when the link has been visited.</span>
+		</label>
+
+		<div id="status"></div>
+
+		<script src="options.js"></script>
+	</body>
+</html>
